@@ -28,8 +28,7 @@ var Counter = React.createClass({
                 React.createElement('button', {}, 'Substract ' + this.state.counter)    
                 )
             )
-        )
-         
+        )        
     }
 });
 
@@ -63,8 +62,7 @@ var secondCounter = React.createClass({
                 React.createElement('button', {}, 'Substract ' + this.state.counter)    
                 )
             )
-        )
-         
+        ) 
     }
 });
 
