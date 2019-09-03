@@ -5,6 +5,52 @@ var Counter = React.createClass({
         };
     },
 
+    getDefaultProps: function() {
+        	return {
+
+            }    
+    },
+
+    componentWillMount: function() {
+        return {
+
+        }
+    },
+
+    componentsDidmount: function() {
+        return {
+
+        }
+    },
+
+    render: function() {
+        return {
+
+        }
+    },
+
+    componentsWillReceiveProps(nextProps) {
+
+    },
+
+    shouldComponentUpdate(nextProps, nextState) {
+
+    },
+
+    componentWillUpdate(nextprops, nextState) {
+
+    },
+
+    componentDidUpdate(prevProps, prevState) {
+
+    },
+
+    componentWillUnmount: function() {
+        return {
+            
+        }
+    },
+
     increment: function() {
         this.setState({
             counter: this.state.counter + 1
