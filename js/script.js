@@ -5,52 +5,7 @@ var Counter = React.createClass({
         };
     },
 
-    /*getDefaultProps: function() {
-        	return {
 
-            }    
-    },
-
-    componentWillMount: function() {
-        return {
-
-        }
-    },
-
-    componentsDidmount: function() {
-        return {
-
-        }
-    },
-
-    render: function() {
-        return {
-
-        }
-    },
-
-    componentsWillReceiveProps(nextProps) {
-
-    },
-
-    shouldComponentUpdate(nextProps, nextState) {
-
-    },
-
-    componentWillUpdate(nextprops, nextState) {
-
-    },
-
-    componentDidUpdate(prevProps, prevState) {
-
-    },
-
-    componentWillUnmount: function() {
-        return {
-            
-        }
-    },
-    */
     increment: function() {
         this.setState({
             counter: this.state.counter + 1
@@ -117,3 +72,13 @@ ReactDOM.render(element, document.getElementById('app'));
 
 var element2 = React.createElement(secondCounter);
 ReactDOM.render(element2, document.getElementById('app2'));
+
+console.log('constructor() : metoda wywolywana przed zamontowaniem komponentu do drzewa DOM, dzieki niej inicjalizujemy stan komponentu ');
+console.log('componentWillMount() : przeprowadzanie komponentu glownego ktora mozna wykonac tylko w czasie wykonywania, niejest czesto stosowana');
+console.log('componentDidMount() : uzywamy np. przy pobieraniu danych z serwera z wywolywaniami z AJAX');
+console.log('componentWillReceiveProps(nextProps) : jezeli stan komonentu wynika z wielu propsow ');
+console.log('componentWillUpdate(nextProps, nextState) : start animacji');
+console.log('componentDidUpdate(prevProps, prevState) :pobieranie danych z serwera, rakcja na zmiany w DOM');
+console.log('componentWillUnmount() : usuwanie event listenerow dodanych w  componentDidMount');
+console.log('shouldComponentUpdate() : kontrola kiedy komponet powinien byc re-renderowany');
+
