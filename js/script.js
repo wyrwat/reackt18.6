@@ -5,7 +5,7 @@ var Counter = React.createClass({
         };
     },
 
-    getDefaultProps: function() {
+    /*getDefaultProps: function() {
         	return {
 
             }    
@@ -50,7 +50,7 @@ var Counter = React.createClass({
             
         }
     },
-
+    */
     increment: function() {
         this.setState({
             counter: this.state.counter + 1
